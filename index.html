@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewJeans Never Dies 💿</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom cursor Kelinci -->
+  <div id="custom-cursor" class="custom-cursor">🐰</div>
+
+  <!-- Floating decorations -->
+  <div class="decorations">
+    <span class="star">★</span>
+    <span class="star">♡</span>
+    <span class="star">★</span>
+    <span class="star">♡</span>
+    <span class="star">★</span>
+    <span class="star">♡</span>
+    <span class="star">★</span>
+    <span class="star">♡</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo-y2k">
+        <span class="glitter">✧</span>
+        NewJeans
+        <span class="glitter">✧</span>
+      </div>
+      <h1>NewJeans Never Dies</h1>
+      <p class="subtitle">minji • hanni • danielle • haerin • hyein</p>
+    </div>
+  </header>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <button id="playBtn" class="music-btn">▶ Play Ditto</button>
+    <div class="music-info">
+      <span class="song-title">♪ Ditto - NewJeans</span>
+      <input type="range" id="volume" min="0" max="1" step="0.05" value="0.4" title="Volume">
+    </div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <nav class="tabs container">
+    <button class="tab-btn active" data-tab="members">Members</button>
+    <button class="tab-btn" data-tab="favorite">My Bias</button>
+    <button class="tab-btn" data-tab="group">Group Photos</button>
+    <button class="tab-btn" data-tab="albums">Albums</button>
+  </nav>
+
+  <!-- Gallery Sections -->
+  <main class="container">
+    <!-- Members Section -->
+    <section id="members" class="gallery-section active">
+      <h2 class="section-title">♡ Members</h2>
+      <div class="gallery" id="members-gallery"></div>
+    </section>
+
+    <!-- Favorite / Bias Section -->
+    <section id="favorite" class="gallery-section">
+      <h2 class="section-title">⭐ My Bias</h2>
+      <div class="gallery" id="favorite-gallery"></div>
+    </section>
+
+    <!-- Group Section -->
+    <section id="group" class="gallery-section">
+      <h2 class="section-title">★ Group Photos</h2>
+      <div class="gallery" id="group-gallery"></div>
+    </section>
+
+    <!-- Albums Section -->
+    <section id="albums" class="gallery-section">
+      <h2 class="section-title">💿 Albums</h2>
+      <div class="gallery albums-grid" id="albums-gallery"></div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">×</span>
+    <img src="" alt="Full size" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <footer>
+    <p>💿 NewJeans Never Dies • Made with ♡ for Bunnies</p>
+  </footer>
+
+  <!-- Background music -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="ditto.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
